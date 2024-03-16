@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WebRTC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'> 
+</head>
+<body>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js"></script> 
+
+    <h2>Room: <span id="room"></span></h2>
+
+    <div id="videos">
+        <video class="video-player" id="user-1" autoplay playsinline></video>
+        <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+
+    <textarea id="offer-sdp"></textarea>
+    <textarea id="answer-sdp"></textarea>
+    <button id="mute">Sound Off</button>
+    <button id="leave">Leave Room</button>
+
+    <script src="agora-rtm-sdk-1.4.4.js"></script>
+    <script type="module" src='main.js'></script>
+</body>
+
+</html>
